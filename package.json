@@ -1,6 +1,6 @@
 {
   "name": "cc-daily-report",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI activity report for your Claude Code Ghost Days. Shows what your AI did while you were offline.",
   "type": "module",
   "bin": {
@@ -22,5 +22,8 @@
     "type": "git",
     "url": "https://github.com/yurukusa/cc-daily-report.git"
   },
-  "homepage": "https://github.com/yurukusa/cc-daily-report#readme"
+  "homepage": "https://github.com/yurukusa/cc-daily-report#readme",
+  "peerDependencies": {
+    "cc-agent-load": ">=1.0.0"
+  }
 }

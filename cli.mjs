@@ -54,8 +54,8 @@ const targetDate = dateArg || yesterday();
 // ── Load cc-agent-load data ──────────────────────────────────────────────────
 function loadAgentLoad() {
   const paths = [
+    ['cc-agent-load', ['--json']],
     [join(HOME, 'bin', 'cc-agent-load'), ['--json']],
-    ['node', [join(HOME, 'projects', 'cc-loop', 'cc-agent-load', 'cli.mjs'), '--json']],
   ];
   for (const [cmd, args] of paths) {
     try {
